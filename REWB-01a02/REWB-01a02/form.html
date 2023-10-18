@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>První Bootstrap web</title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+  
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">formular</a>
+              <a class="nav-link active" aria-current="page" href="#">bomba</a>
+              
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Domů</a>
+            
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Podstránka 1</a></li>
+                <li><a class="dropdown-item" href="#">Podstránka 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+  <main>
+    <div class="mb-4 mt-5 pt-5 pb-3 bg-light">
+      <div class="container">
+        <h1 class="fw-bold">Nadpis</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Domů</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Aktuální stránka</li>
+          </ol>
+        </nav>
+        
+        <p class="col-md-12 fs-4">
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+        </p>
+        
+<button type="button" class="btn btn-success">Úspěšné tlačítko</button>
+<button type="button" class="btn btn-primary">Spravne tlacitko</button>
+
+<div class="container">
+  <div class="row">
+<div class="col">
+<h2>Formulare</h2>
+<h3>Inline formular</h3>
+
+<form class="row g-3">
+  <div class="col-auto">
+    <label for="email" class="visually-hidden">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="email" value="test@osu.cz">
+  </div>
+  <div class="col-auto">
+    <label for="password" class="visually-hidden">Heslo</label>
+    <input type="password" class="form-control" id="password" placeholder="Heslo">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Přihlasit</button>
+  </div>
+</form>
+<h3>Klasicky formular</h3>
+<form class="row gy-3">
+  <div class="col-mb-3">
+    <label for="name" class="form-label">Jméno</label>
+    <input type="text" class="form-control is-valid" id="name" required value="" >
+    <div class="valid-feedback">Vyplněno správně!
+
+    </div>
+  </div>
+  <div class="col-mb-3">
+    <label for="surname" class="form-label">Přijmeni</label>
+    <input type="text" class="form-control is-invalid" id="surname" value="" >
+    <div class="invalid-feedback">Vyplněno špatně!
+
+    </div>
+  </div>
+  <div class="col-mb-3">
+    <label for="login" class="form-label">Login</label>
+    <div class="input-group">
+      <span class="input-group-text">@</span>
+      <input type="text" class="form-control" value="" id="login">
+    </div>
+  </div>
+  <div class="col mb-3">
+    <label for="region" class="form-label">Kraj</label>
+    <select class="form-select" >
+      <option selected value="">Vyberte kraj</option>
+      <option value="MSK">Morabvskoslezsky </option>
+      <option value="OL">Olomoucky</option>
+      <option value="JM">Jihomoravsky</option>
+    </select>
+  </div>
+</form>
+
+</div>
+  </div>
+</div>
+      
+
+    
+   
+    
+
+
+    
+    
+  </main>
+   
+    
+   
+      
+    <footer class="mt-5 pt-3 pb-2">
+      <p class="text-center">&copy; Bootstrap web 2022</p>
+    </footer>  
+    
+       
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+</html>            
+    

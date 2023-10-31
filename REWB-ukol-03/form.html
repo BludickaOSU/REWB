@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>První Bootstrap web</title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+  
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./form.html">Formulář</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Druhé</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Třetí</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link">Čtvrté</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <div class="mb-4 mt-5 pt-5 pb-3 bg-light">
+      <div class="container">
+        <h1 class="fw-bold">Nadpis</h1>
+        <p class="col-md-12 fs-4">
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+        </p>
+        <button type="button" class="btn btn-primary btn-lg">Tlačítko</button>
+        <button type="button" class="btn btn-outline-warning btn-lg">Tlačítko 2</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Formuláře</h2>
+          <h3>Inline formulář</h3>
+
+          <form class="row g-3">
+            <div class="col-auto">
+              <label for="email" class="visually-hidden">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="email" value="test@osu.cz">
+            </div>
+            <div class="col-auto">
+              <label for="password" class="visually-hidden">Heslo</label>
+              <input type="password" class="form-control" id="password" placeholder="Heslo">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Přihlásit</button>
+            </div>
+          </form>
+
+          <h3>Klasický formulář</h3>
+
+          <form class="row gy-3">
+            <div class="col-mb-3">
+              <label for="name" class="form-label">Jméno</label>
+              <input type="text" class="form-control is-valid" id="name" value="" required>
+              <div class="valid-feedback">
+                Vyplněno správně!
+              </div>
+            </div>
+            <div class="col-mb-3">
+              <label for="surname" class="form-label">Příjmení</label>
+              <input type="text" class="form-control is-invalid" id="surname" value="" required>
+              <div class="invalid-feedback">
+                Vyplněno nesprávně!
+              </div>
+            </div>
+            <div class="col-mb-3">
+              <label for="login" class="form-label">Login</label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="login" value="">
+              </div>
+            </div>
+
+            <div class="col-mb-3">
+              <label for="region" class="form-label">Kraj</label>
+              <select class="form-select">
+                <option selected disabled value="">Vyberte kraj</option>
+                <option value="MSK">Moravskoslezský</option>
+                <option value="OL">Olomoucký</option>
+                <option value="JM">Jihomoravský</option>
+              </select>
+            </div>
+
+            <div class="col-mb-3">
+              <label for="hobby" class="form-label">Koníčky</label>
+              <div class="form-check" id="hobby">
+                <input class="form-check-input" type="checkbox" value="hory" id="hory">
+                <label class="form-check-label" for="hory">hory</label> 
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="kino" id="kino">
+                <label class="form-check-label" for="kino">kino</label> 
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" disabled type="checkbox" value="cestovani" id="cestovani">
+                <label class="form-check-label" for="cestovani">cestování</label> 
+              </div>
+            </div>
+
+            <div class="col-mb-3">
+              <label for="sex" class="form-label">Pohlaví</label>
+              <div class="form-check" id="sex">
+                <input class="form-check-input" type="radio" name="sex" value="male" id="male">
+                <label class="form-check-label" for="male">muž</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" value="female" id="female">
+                <label class="form-check-label" for="female">žena</label>
+              </div>
+            </div>
+
+            <div class="col-mb-3">
+              <label for="range" class="form-label">Rozsah</label>
+              <input type="range" class="form-range" id="range" min="0" max="10">
+            </div>
+
+            <div class="col-mb-3">
+              <label for="age" class="form-label">Věk</label>
+              <input type="number" class="form-control" id="age" value="15" required>
+            </div>
+
+            <div class="col-mb-3">
+              <label for="emailCust" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailCust" required>
+            </div>
+
+            <div class="col-mb-3">
+              <label for="note" class="form-label">Poznámka</label>
+              <textarea class="form-control" id="note" rows="3"></textarea>
+            </div>
+
+            <div class="col-mb-3">
+              <button class="btn btn-primary" type="submit">Odešli</button>
+            </div>
+
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+   
+    
+   
+      
+    <footer class="mt-5 pt-3 pb-2">
+      <p class="text-center">&copy; Bootstrap web 2023</p>
+    </footer>  
+    
+       
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+</html>            
+    

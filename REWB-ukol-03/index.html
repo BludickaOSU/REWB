@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>První Bootstrap web</title>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+  
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./form.html">Formulář</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Druhé</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Třetí</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link">Čtvrté</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <div class="mb-4 mt-5 pt-5 pb-3 bg-light">
+      <div class="container">
+        <h1 class="fw-bold">Nadpis</h1>
+        <p class="col-md-12 fs-4">
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+          text text text text text text text text text text text text
+        </p>
+        <button type="button" class="btn btn-primary btn-lg">Tlačítko</button>
+        <button type="button" class="btn btn-outline-warning btn-lg">Tlačítko 2</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Hlavní stránka</a></li>
+          <li class="breadcrumb-item"><a href="#">Dokumenty</a></li>
+          <li class="breadcrumb-item"><a href="#">Fakultní dokumenty</a></li>
+          <li class="breadcrumb-item"><a href="#">Dokumenty katedry</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Dokumenty 7REWB</li>
+        </ol>
+      </nav>
+
+    </div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+          <h2>Sloupec 1</h2>
+          <button type="button" class="btn btn-success">Zjistit více</button>
+        </div>
+        <div class="col">
+          <h2>Sloupec 2</h2>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+          data-bs-target="#exampleModal">
+            Modální okno
+          </button>
+          
+        </div>
+        <div class="col">
+          <h2>Sloupec 3</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Profil uživatele</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="el_roberto.jpg" class="img-fluid rounded-circle" alt="Uživatelův obrázek">
+              </div>
+              <div class="col-md-8">
+                <h2>Robert Kalinak</h2>
+                <p> Bývalý Slovenský ministr vnitra a člen politické strany Smer. Obviněn z korupce</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+   
+    
+   
+      
+    <footer class="mt-5 pt-3 pb-2">
+      <p class="text-center">&copy; Bootstrap web 2023</p>
+    </footer>  
+    
+       
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+</html>            
+    

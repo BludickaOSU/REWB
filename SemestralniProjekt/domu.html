@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaše Webové Stránky</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  bg-dark fixed-top" data-bs-theme="dark">
+    <div class="container ">
+        <a class="navbar-brand" href="#">
+            <img class="rounded-circle img-fluid" src="pictures/companylogo.PNG" alt="Logo" width="15%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="domu.html">Domů</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produkty.html">Produkty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerie.html">Galerie</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <div class="container mt-5 mb-3 ">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="pictures/carouselItem03.jpg" class="d-block w-100" alt="Pražský hrad" style="object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HardWare</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/carouselItem02.jpg" class="d-block w-100" alt="Hradčany" style="object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Software</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/carouselItem01.jpg" class="d-block w-100" alt="Vltava" style="object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Network</h5>
+                        <p></p>
+                    </div>
+                </div>
+                
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        
+
+        <!-- Obrazky a texty -->
+          <div class="container container-main">
+            <div class="row">
+                <!-- První řádek -->
+                <div class="custom-hr"></div>
+                <div class="col-md-4">
+                    <img class="rounded-circle img-fluid" alt="avatar1" src="pictures/roundPic-01.jpg" />
+                </div>
+                <div class="col-md-8 d-flex align-items-center justify-content-center">
+                    <p class="text-center">Postavíme vám systém na míru</p>
+                </div>
+            </div>
+            <div class="custom-hr"></div> <!-- Přidání vlastní čáry pomocí CSS třídy -->
+            <div class="row">
+                <!-- Druhý řádek -->
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <p class="text-center">Navrhneme software, který bude spolehlivý</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="rounded-circle img-fluid" alt="avatar2" src="pictures/roundPic-02.jpg" />
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <p class="text-center">A bude vyhovovat vám a vašim zákazníkům</p>
+                </div>
+            </div>
+            <div class="custom-hr"></div> <!-- Přidání vlastní čáry pomocí CSS třídy -->
+            <div class="row">
+                <!-- Třetí řádek -->
+                <div class="col-md-8 d-flex align-items-center justify-content-center">
+                    <p class="text-center">Následně vše propojíme stabilním a hlavně bezpečným připojením</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img class="rounded-circle img-fluid" alt="avatar3" src="pictures/roundPic-03.jpg" />
+                </div>
+                <div class="custom-hr"></div>
+            </div>
+        </div>
+        
+        
+        
+
+
+
+
+
+
+        <div class="container container-main">
+            <h2 class="text-center">Často navštěvované</h2>
+        
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="hardware-tab" data-bs-toggle="tab" href="#hardware">Hardware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="software-tab" data-bs-toggle="tab" href="#software">Software</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="networks-tab" data-bs-toggle="tab" href="#networks">Networks</a>
+                </li>
+            </ul>
+        
+            <div class="tab-content mt-3">
+                <!-- Obsah pro Hardware -->
+                <div class="tab-pane fade show active" id="hardware">
+                    <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="pictures/Produkt0001.jpg"card-img-top" style="height: 200px; width: 100%; object-fit: cover;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Produkt 1</h5>
+        
+                                <p class="card-text">Popis produktu 1.</p>
+        
+                                <a href="#" class="btn btn-primary">Více informací</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="pictures/Produkt0002.jpg" class="card-img-top" style="height: 200px; width: 100%; object-fit: cover;" alt="...">
+                            <div class="card-body">
+        
+                                <h5 class="card-title">Produkt 2</h5>
+        
+                                <p class="card-text">Popis produktu 2.</p>
+        
+                                <a href="#" class="btn btn-primary">Více informací</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="pictures/Produkt0003.jpg"card-img-top" style="height: 200px; width: 100%; object-fit: cover;" alt="...">
+                            <div class="card-body">
+        
+                                <h5 class="card-title">Produkt 3</h5>
+        
+                                <p class="card-text">Popis produktu 3.</p>
+        
+                                <a href="#" class="btn btn-primary">Více informací</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="pictures/Produkt0003.jpg"card-img-top" style="height: 200px; width: 100%; object-fit: cover;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Produkt 3</h5>
+        
+                                <p class="card-text">Popis produktu 3.</p>
+        
+                                <a href="#" class="btn btn-primary">Více informací</a>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- Obsah pro Software -->
+                <div class="tab-pane fade" id="software">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="pictures/Produkt0001.jpg"card-img-top" style="height: 200px; width: 100%; object-fit: cover;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Produkt 1</h5>
+        
+                                <p class="card-text">Popis produktu 1.</p>
+        
+                                <a href="#" class="btn btn-primary">Více informací</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Obsah pro Networks -->
+                <div class="tab-pane fade" id="networks">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="pictures/Produkt0001.jpg"card-img-top" style="height: 200px; width: 100%; object-fit: cover;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Produkt 1</h5>
+        
+                                <p class="card-text">Popis produktu 1.</p>
+        
+                                <a href="#" class="btn btn-primary">Více informací</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var myTabs = new bootstrap.Tab(document.getElementById('hardware-tab'));
+            myTabs.show(); // Zajištění zobrazení obsahu pro Hardware po načtení stránky
+        </script>
+        
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    </main>
+
+    
+
+    <footer class="bg-dark text-light">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">Kontakt na podporu: +420 123 456 789</p>
+                    <p class="mb-0">Adresa: Bráfova 7, Ostrava 700 30</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p class="mb-0">Tato stránka je pro výukové účely</p>
+                    <p class="mb-0">Matěj Červený</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

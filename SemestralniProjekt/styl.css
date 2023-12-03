@@ -1,0 +1,61 @@
+footer
+{
+  background-color:#aaa;
+}
+.carousel-image {
+  width: auto; /* Pevná šířka */
+  height: auto;/* Pevná výška */
+  object-fit: cover; /* Poměr stran zachován, vyplní celý prostor */
+  max-width: 200px; /* Zachová poměr stran a zároveň vyplní celý prostor */
+}
+
+
+
+.card {
+
+  margin-bottom: 20px;
+
+}
+
+
+.modal-body {
+
+  max-height: 400px;
+
+  overflow-y: auto;
+
+}
+
+.product-frame {
+  width: 200px; /* Stejná šířka pro všechna očka s produkty */
+  height: 200px; /* Stejná výška pro všechna očka s produkty */
+  position: relative; /* Nastavení relativní pozice pro vložení obrázku */
+ }
+ 
+ .product-image {
+  background-image: url('pictures/frame.png'); /* Jednotný tvar oka s produktem */
+  background-size: 100% 100%; /* Velikost obrázku 100% */
+  background-position: center; /* Pozice obrázku vystředěna */
+  width: 100%; /* Celá šířka prvku */
+  height: 100%; /* Celá výška prvku */
+ }
+
+ .carousel-item img {
+  height: 500px; /* Nastaví pevnou výšku na 100% výšky rodičovského kontejneru */
+  object-fit: cover; /* Zajistí, že obrázek vyplní celý kontejner */
+ }
+
+ .custom-hr {
+  margin: 2rem 0; /* Upřesněte vzdálenost podle potřeby */
+  border-top: 1px solid #ccc; /* Barva a styl čáry */
+}
+
+.container-main{
+  background-color: white;
+}
+.galerie-obrazek {
+  width: 100%; /* Šířka 100% pro responsivitu */
+  height: auto; /* Automatická výška pro zachování poměru stran */
+  max-width: 300px; /* Maximální šířka obrázku */
+  max-height: 200px; /* Maximální výška obrázku */
+}

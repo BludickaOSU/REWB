@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaše Webové Stránky</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    <link href="customColor.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded-circle img-fluid" src="pictures/companylogo.PNG" alt="Logo" width="15%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="domu.html">Domů</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produkty.html">Produkty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerie.html">Galerie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                </nav>
+    </header>
+
+<main>
+
+<!--tabulka-->
+    <div class="container mt-5 container-main" >
+
+        <h1 class="mt-5 text-center">FAQ</h1>
+
+        <ul class="nav nav-tabs">
+
+            <li class="nav-item">
+
+                <a class="nav-link active" aria-current="page" href="#technical" data-bs-toggle="tab">Technical FAQ</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#job" data-bs-toggle="tab">Job FAQ</a>
+
+            </li>
+
+        </ul>
+
+
+
+<!-- tabulka-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="technical">
+                <table id="techTable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        
+                        <tr>
+                            <td>Jaká je minimální konfigurace pro spuštění našeho softwaru?</td>
+                            <td>Minimální konfigurace zahrnuje procesor Intel Core i5, 8 GB RAM a 256 GB SSD.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jak aktualizuji software na nejnovější verzi?</td>
+                            <td>Software lze aktualizovat pomocí vestavěného aktualizačního mechanismu v menu Nastavení.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jaký je postup při řešení chybových hlášení během instalace?</td>
+                            <td>Přečtěte si náš průvodce instalací na webových stránkách nebo kontaktujte naši technickou podporu.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Podporujete víceplatforemní instalaci?</td>
+                            <td>Ano, náš software je kompatibilní s Windows, macOS a Linux.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jak mohu resetovat heslo k mým uživatelským účtům?</td>
+                            <td>Heslo lze resetovat pomocí funkce Zapomenuté heslo na přihlašovací obrazovce.</td>
+                        </tr>
+                        <tr>
+                            <td>Můžu na vašem softwaru nastavit jazyk rozhraní?</td>
+                            <td>Ano, naše software podporuje více jazyků. Jazyk lze nastavit v nastavení aplikace.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Co dělat, pokud se software nechce spustit?</td>
+                            <td>Zkuste restartovat počítač a zkontrolujte, zda máte nejnovější verzi softwaru nainstalovanou.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jak mohu exportovat data do jiných formátů?</td>
+                            <td>Export dat je možný přes menu Export v aplikaci. Podporujeme formáty CSV, Excel a PDF.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jsou vaše aplikace bezpečné pro používání?</td>
+                            <td>Ano, klade se velký důraz na bezpečnost. Aktualizujeme a monitorujeme naše systémy pravidelně.</td>
+                        </tr>
+                        <tr>
+                            <td>Jak mohu přizpůsobit uživatelské rozhraní?</td>
+                            <td>Uživatelské rozhraní lze přizpůsobit v sekci Nastavení podle osobních preferencí.</td>
+                        </tr>
+                        <tr>
+                            <td>Jaký je postup pro obnovu dat ze zálohy?</td>
+                            <td>Pro obnovu dat ze zálohy použijte funkci Obnova dat v menu Nastavení.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Podporujete jednorázová hesla pro vyšší bezpečnost?</td>
+                            <td>Ano, nabízíme možnost použití jednorázových hesel pro extra vrstvu bezpečnosti.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jak mohu nastavit upozornění na nové aktualizace?</td>
+                            <td>Nastavení upozornění na nové aktualizace naleznete v sekci Upozornění v nastavení aplikace.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jak dlouho trvá obvyklá odpověď od technické podpory?</td>
+                            <td>Snažíme se odpovídat co nejrychleji. Odpovědi od technické podpory obvykle přicházejí do 24 hodin.</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Může náš tým požádat o vlastní úpravy softwaru?</td>
+                            <td>Ano, nabízíme možnost vlastních úprav softwaru podle individuálních potřeb klientů.</td>
+                        </tr>
+                        <tr>
+                            <td>Jak mohu změnit jazyk uživatelského rozhraní?</td>
+                            <td>Jazyk lze změnit v sekci Nastavení, pod menu Jazyk.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Co dělat, pokud dojde k pádu aplikace?</td>
+                            <td>Pokud aplikace spadne, restartujte ji a zkontrolujte, zda máte aktuální verzi.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Podporujete integrované API pro propojení s dalšími systémy?</td>
+                            <td>Ano, poskytujeme API pro integraci s dalšími systémy. Více informací naleznete v dokumentaci API.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaký typ šifrování používáte pro citlivá data?</td>
+                            <td>Pro citlivá data používáme šifrování AES-256 pro zajištění maximální bezpečnosti.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Co dělat, pokud zapomenu své uživatelské jméno?</td>
+                            <td>Uživatelské jméno můžete obnovit kontaktem s naší technickou podporou nebo pomocí e-mailové adresy použité při registraci.</td>
+                        </tr>
+                        <tr>
+                            <td>Jak mohu získat beta verzi nových funkcí?</td>
+                            <td>Přihlaste se k našemu beta testování skrze uživatelský účet na našich webových stránkách.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Existuje mobilní aplikace pro váš software?</td>
+                            <td>Ano, nabízíme mobilní aplikace pro iOS a Android pro snadný přístup k vašim datům.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak zajistit, aby software byl kompatibilní s různými prohlížeči?</td>
+                            <td>Doporučujeme používat nejnovější verze prohlížečů, jako jsou Chrome, Firefox, a Safari, pro optimální kompatibilitu.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Co dělat, když narazím na chybu ve vašem softwaru?</td>
+                            <td>Nahláste chybu naší technické podpoře a přiložte detaily o chybě, abychom mohli rychle reagovat.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak mohu získat dokumentaci k API?</td>
+                            <td>Dokumentaci k API můžete stáhnout ze sekce Dokumentace na našich webových stránkách.</td>
+                        </tr>
+                        <tr>
+                            <td>Jak mohu nastavit upozornění na nízký stav paměti?</td>
+                            <td>V nastavení aplikace můžete konfigurovat upozornění na nízký stav paměti.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Podporujete jednoúčelová zařízení jako tiskárny nebo skenery?</td>
+                            <td>Ano, naše software může být integrován s jednoúčelovými zařízeními pro pohodlnou práci.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak dlouho trvá implementace vašeho softwaru do stávajícího systému?</td>
+                            <td>Čas implementace závisí na rozsahu integrace. Běžně to může trvat od několika dní do několika týdnů.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Co dělat, když se setkám s nečekaným chováním aplikace?</td>
+                            <td>Zkuste restartovat aplikaci a případně kontaktujte naši technickou podporu s popisem problému.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak často probíhají aktualizace vašeho softwaru?</td>
+                            <td>Aktualizace jsou obvykle vydávány každý měsíc s opravami chyb a novými funkcemi.</td>
+                        </tr>
+                        <tr>
+                            <td>Jak mohu vytvořit zálohu dat z vašeho softwaru?</td>
+                            <td>V sekci Nastavení naleznete možnost Záloha dat, kde můžete vytvořit a obnovit zálohy.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Co dělat, když mám problémy s připojením k síti?</td>
+                            <td>Zkontrolujte připojení k internetu, restartujte router a kontaktujte svého poskytovatele internetových služeb.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Podporujete jednotkové testy pro váš software?</td>
+                            <td>Ano, náš software je navržen s ohledem na jednotkové testování pro zajištění kvality kódu.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak mohu konfigurovat automatické aktualizace?</td>
+                            <td>V sekci Nastavení najdete možnost Automatické aktualizace, kde můžete nastavit preferovaný režim aktualizací.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak zajistit bezpečné přenosy dat přes internet?</td>
+                            <td>Využíváme šifrování SSL/TLS pro zabezpečený přenos dat přes internet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+<!-- tabulka Job FAQ-->
+            <div class="tab-pane fade" id="job">
+                <table id="jobTable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Jak mohu odeslat žádost o práci ve vaší firmě?</td>
+                            <td>Žádost o práci můžete odeslat online přes naše webové stránky na stránce "Kariéra".</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaké pozice jsou v současné době otevřené?</td>
+                            <td>Aktuálně nabízíme otevřené pozice v oblastech vývoje software, technické podpory a marketingu.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaké jsou kvalifikační požadavky pro vstup na pozici vývojáře?</td>
+                            <td>Pro pozici vývojáře vyžadujeme minimálně bakalářský titul v oboru informatiky a zkušenosti s programováním.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Máte program stáží nebo tréninkový program pro studenty?</td>
+                            <td>ANO, nabízíme stáže a tréninkové programy pro studenty s možností zapojení se do reálných projektů.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak probíhá proces výběru uchazečů?</td>
+                            <td>Proces výběru zahrnuje předložení životopisu, pohovor a případně testování dovedností a znalostí.</td>
+                        </tr>
+                        <tr>
+                            <td>Existuje možnost home office nebo flexibilní pracovní doby?</td>
+                            <td>Ano, nabízíme možnost home office a flexibilní pracovní doby v souladu s pracovními požadavky a projekty.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaké jsou benefity pro zaměstnance ve vaší firmě?</td>
+                            <td>Benefity zahrnují zdravotní pojištění, stravenky, flexibilní pracovní doby a další odměny za výkon.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká je firemní kultura a pracovní prostředí?</td>
+                            <td>Naše firma zdůrazňuje spolupráci, inovace a podporu rozvoje zaměstnanců. Pracovní prostředí je přátelské a otevřené.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak probíhá proces interního školení a rozvoje kariéry?</td>
+                            <td>Nabízíme interní školení, mentorování a pravidelné hodnocení výkonu pro podporu rozvoje kariéry zaměstnanců.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká je politika ohledně rovnosti a diverzity ve firmě?</td>
+                            <td>Náš podnik zastává politiku rovnosti a diverzity a aktivně podporuje inkluzivní pracovní prostředí.</td>
+                        </tr>
+                        <tr>
+                            <td>Jaké jsou dlouhodobé cíle firmy?</td>
+                            <td>Dlouhodobé cíle zahrnují expanzi na nové trhy, inovace v produktech a udržitelný růst.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká je firemní filozofie ohledně udržitelnosti?</td>
+                            <td>Podporujeme udržitelnost ve všech aspektech podnikání, včetně environmentální odpovědnosti a sociální odpovědnosti firmy.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaký je přístup firmy k pracovnímu prostředí a ergonomii?</td>
+                            <td>Dbáme na ergonomická pracovní místa a prostředí, které podporuje zdraví a pohodu zaměstnanců.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak firma podporuje inovace a tvůrčí přístup zaměstnanců?</td>
+                            <td>Podporujeme inovativní myšlení a poskytujeme prostředí, ve kterém mohou zaměstnanci přinášet nové nápady a řešení.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká jsou očekávání firmy ohledně firemní kultury?</td>
+                            <td>Očekáváme, že zaměstnanci budou sdílet hodnoty firmy, pracovat v týmu a aktivně přispívat k dosahování společných cílů.</td>
+                        </tr>
+                        <tr>
+                            <td>Existuje možnost účasti na odborných konferencích nebo školeních?</td>
+                            <td>Ano, podporujeme účast na odborných konferencích a nabízíme příležitosti pro další vzdělávání.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaké jsou perspektivy pro postup v kariéře uvnitř firmy?</td>
+                            <td>Nabízíme zaměstnancům možnosti postupu a kariérního růstu v souladu s jejich dovednostmi a výkonem.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaký je přístup k pracovnímu / soukromému životu?</td>
+                            <td>Snažíme se udržovat rovnováhu mezi pracovním a soukromým životem zaměstnanců a poskytujeme flexibilitu v pracovních hodinách.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jak firma podporuje týmovou spolupráci a komunikaci?</td>
+                            <td>Podporujeme týmovou spolupráci prostřednictvím pravidelných schůzek, společných projektů a komunikačních platforem.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Existují možnosti pro profesní rozvoj v oblasti managementu?</td>
+                            <td>Ano, nabízíme školení a příležitosti pro rozvoj dovedností v oblasti managementu pro zaměstnance s ambicemi v této oblasti.</td>
+                        </tr>
+                        <tr>
+                            <td>Jak firma podporuje inovace a výzkum a vývoj?</td>
+                            <td>Podporujeme inovace prostřednictvím investic do výzkumu a vývoje a povzbuzujeme zaměstnance k přinášení nových nápadů.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaký je přístup firmy k školení a rozvoji zaměstnanců?</td>
+                            <td>Školíme zaměstnance pravidelně a podporujeme jejich osobní a profesní rozvoj.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká je politika firmy ohledně diverzity a včetně pracovního prostředí?</td>
+                            <td>Firma aktivně prosazuje diverzitu a vytváření inkluzivního pracovního prostředí pro všechny zaměstnance.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká jsou opatření firmy pro udržitelnost a odpovědné podnikání?</td>
+                            <td>Firma implementuje opatření pro snížení ekologické stopy a odpovědný přístup k podnikání.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jaká je role zaměstnanců ve vytváření a naplňování firemních cílů?</td>
+                            <td>Zaměstnanci jsou klíčovým faktorem ve vytváření a dosahování firemních cílů, a jejich příspěvky jsou ceněny a oceněny.</td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+<!--Formulař na napsani otazky-->
+    <div class="container mt-5 container-main">
+        <h2>Máte otázku? Napište nám</h2>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="question">Otázka</label>
+                <textarea class="form-control" id="question" name="question" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="subject">Předmět otázky</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="mb-3">
+                <label for="email">Kontaktní email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Odeslat otázku</button>
+        </form>
+    </div>
+    
+
+
+    
+</main>
+
+
+<footer class="bg-dark text-light">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">Kontakt na podporu: +420 123 456 789</p>
+                <p class="mb-0">Adresa: Bráfova 7, Ostrava 700 30</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p class="mb-0">Tato stránka je pro výukové účely</p>
+                <p class="mb-0">Matěj Červený</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#techTable').DataTable();
+        $('#jobTable').DataTable();
+    });
+</script>
+</body>
+</html>

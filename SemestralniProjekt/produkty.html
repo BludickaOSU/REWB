@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaše Webové Stránky</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styl.css" rel="stylesheet">
+    <link href="customColor.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded-circle img-fluid" src="pictures/companylogo.PNG" alt="Logo" width="15%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="domu.html">Domů</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produkty.html">Produkty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerie.html">Galerie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                </nav>
+    </header>
+    <main>
+        <div class="container container-main">
+
+            <h2>Produkty</h2>
+    
+            <div class="row">
+    
+                <div class="col-md-6">
+    
+                    <div class="card">
+    
+                        <div class="product-frame">
+
+                            <img class="product-image" src="pictures/Produkt0001.jpg" alt="Product 1">
+                           
+                        </div>
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title">GAINWARD GeForce RTX 3080 Ti Phoenix 12GB</h5>
+    
+                            <p class="card-text">Cena: 18 490 Kč</p>
+    
+                            <button class="btn btn-primary" onclick="pridejDoKosiku()">Přidat do košíku</button>
+    
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popis1">Zobrazit podrobnosti</button>
+    
+                        </div>
+                    </div>
+                    <div class="card">
+    
+                        <div class="product-frame">
+
+                            <img class="product-image" src="pictures/Produkt0001.jpg" alt="Product 1">
+                           
+                        </div>
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title">GAINWARD GeForce RTX 3080 Ti Phoenix 12GB</h5>
+    
+                            <p class="card-text">Cena: 18 490 Kč</p>
+    
+                            <button class="btn btn-primary" onclick="pridejDoKosiku()">Přidat do košíku</button>
+    
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popis1">Zobrazit podrobnosti</button>
+    
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                    <div class="card">
+    
+                        <div class="product-frame">
+
+                            <img class="product-image" src="pictures/Produkt0002.jpg" alt="Product 2">
+                           
+                           </div>
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title">Samsung 970 EVO PLUS 1TB</h5>
+    
+                            <p class="card-text">Cena: 1 599 Kč</p>
+    
+                            <button class="btn btn-primary" onclick="pridejDoKosiku()">Přidat do košíku</button>
+    
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popis1">Zobrazit podrobnosti</button>
+    
+                        </div>
+    
+                    </div>
+                    <div class="card">
+    
+                        <div class="product-frame">
+
+                            <img class="product-image" src="pictures/Produkt0003.jpg" alt="Product 2">
+                           
+                           </div>
+    
+                        <div class="card-body">
+    
+                            <h5 class="card-title">GAINWARD GeForce RTX 3080 Ti Phoenix 12GB</h5>
+    
+                            <p class="card-text">Cena: 18 490 Kč</p>
+    
+                            <button class="btn btn-primary" onclick="pridejDoKosiku()">Přidat do košíku</button>
+    
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popis1">Zobrazit podrobnosti</button>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- ... Další produkty ... -->
+    
+            
+    
+        </div>
+    
+    
+        
+    
+        <!-- Modal -->
+    <div class="modal fade" id="popis1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Profil uživatele</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="el_roberto.jpg" class="img-fluid rounded-circle" alt="Uživatelův obrázek">
+                </div>
+                <div class="col-md-8">
+                  <h2>Robert Kalinak</h2>
+                  <p> Bývalý Slovenský ministr vnitra a člen politické strany Smer. Obviněn z korupce</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- ... Další modální okna pro podrobnosti ... -->
+    </main>
+        <footer class="bg-dark text-light">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">Kontakt na podporu: +420 123 456 789</p>
+                        <p class="mb-0">Adresa: Bráfova 7, Ostrava 700 30</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p class="mb-0">Tato stránka je pro výukové účely</p>
+                        <p class="mb-0">Matěj Červený</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+</body>
